@@ -1,0 +1,122 @@
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 130px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 8px 24px 89px -11.6px rgba(22, 52, 80, 0.1);
+
+  &__picture {
+    width: 290px;
+    padding: 0 15px;
+  }
+
+  &__image {
+    margin-top: -130px;
+    height: 398px;
+    object-fit: cover;
+  }
+
+  &__info {
+    flex: 0 0 calc(100% - 290px);
+    padding: 30px;
+    max-width: calc(100% - 290px);
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.2;
+
+    &_mb-8 {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+
+    &_mb-40 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .call-to-action {
+    margin-top: 30px;
+
+    &__picture {
+      display: none;
+    }
+
+    &__info {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .call-to-action {
+    &__title {
+      font-size: 46px;
+    }
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .call-to-action {
+    &__title {
+      font-size: 44px;
+    }
+
+    &__subtitle {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .call-to-action {
+    &__title {
+      font-size: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .call-to-action {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .call-to-action {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .call-to-action {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .call-to-action {
+    &__subtitle {
+      font-size: 21px;
+    }
+  }
+}

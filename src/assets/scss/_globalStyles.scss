@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #262626;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: #FFFFFF;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #24c8bc;
+    border-radius: 6px;
+  }
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+#app {
+  min-height: 100vh;
+  background: #F5F5F5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #262626;
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//////////
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h5 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #24C8BC;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.carousel {
+  &__slide {
+    align-items: flex-start;
+  }
+}
+
+.page {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+  }
+
+  &-subtitle {
+    max-width: 543px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B535A;
+
+    &_mt-24 {
+      margin-top: 24px;
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.social-media-icon {
+  cursor: pointer;
+
+  & path {
+    fill: #24C8BC;
+    stroke: #24C8BC;
+    transition: .25s;
+  }
+
+  &:hover path {
+    fill: #3bbbb1;
+    stroke: #3bbbb1;
+    transition: .25s;
+  }
+
+  &.only-fill {
+    & path {
+      fill: #24C8BC;
+      stroke: none;
+    }
+
+    &:hover path {
+      fill: #3bbbb1;
+      stroke: none;
+    }
+  }
+
+  &.only-stroke {
+    & path {
+      fill: none;
+      stroke: #24C8BC;
+    }
+
+    &:hover path {
+      fill: none;
+      stroke: #3bbbb1;
+    }
+  }
+}
+
+main {
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.ymaps3x0--map-copyrights {
+  display: none !important;
+}
+
+.yandex-map-prompt {
+  width: 224px;
+  height: 94px;
+  position: absolute;
+  top: -96px;
+  left: -81px;
+  z-index: 1;
+
+  &__content {
+    padding: 12px 0 12px 12px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    & > span {
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
+
+  & > svg {
+    position: absolute;
+  }
+
+  &__street {
+    font-weight: 600;
+    color: #1E0E00;
+  }
+
+  &__floor {
+    color: #908A7F;
+    line-height: normal;
+  }
+
+  &__phone {
+    color: #1E0E00;
+
+    &_mt-4 {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  h1 {
+    font-size: 31px;
+  }
+}
